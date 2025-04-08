@@ -10,6 +10,20 @@ html,body{
     height: 100%;
     width:100%;
 }
+#crsr {
+    border: 2px solid rgb(181, 179, 179);
+    border-radius: 50%;
+    height: 5vw;
+    width: 5vw;
+    position: fixed;
+    z-index: 9999;
+    pointer-events: none; /* Ensures the custom cursor doesn't block interactions */
+    transform: translate(-50%, -50%); /* Centers the cursor on the mouse */
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    mix-blend-mode: difference;
+    box-shadow: #fff;
+}
+
 
 #loader{
     height: 100%;
@@ -88,3 +102,40 @@ html,body{
     width: 100vw;
     position: relative;
 }
+
+#page1 #nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4vw 8vw;
+    position: relative;
+    z-index: 99;
+}
+.nav-part-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+    font-size: 1.2vw;
+    
+}
+.nav-part-2 h4{
+    font-weight: 200;
+    margin-right: -12px;
+}
+/* hero section starts */
+.hero{
+    /* background-color: crimson; */
+    transform: translate(25%, -10%);
+    font-size: 5.5vw;
+    font-weight: 900;
+    text-transform: uppercase;
+    z-index: 99;
+    overflow: hidden;
+}
+.hero h1{
+    font-size: 7vw;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+/* hero section ends */
