@@ -5,6 +5,13 @@ function loader_animation() {
         stagger:0.5,
         delay:0.5
     })
+    gsap.from(".line h2",{
+        y:100,
+        opacity:0,
+        duration:0.5,
+        // stagger:0.5,
+        delay:0.5
+    })
     
     let part1 = document.querySelector('.line-1-part-1 h5');
     let i = 0;
@@ -35,7 +42,14 @@ function loader_animation() {
         duration:0.6,
         stagger:0.5,
         delay:0.2,
-        
+
+})
+    tl.from('.hero h2',{
+        y:100,
+        duration:0.5,
+        stagger:0.5,
+        delay:0.1,
+
 })
 }
 function cursor() {
@@ -57,6 +71,10 @@ function cursor() {
 }
 loader_animation();
 cursor();
+
+
+
+
 
 
 
